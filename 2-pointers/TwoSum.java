@@ -103,7 +103,7 @@ public class TwoSum {
     private static int[] bruteforceSolution(int[] array,int target){
 
         for(int i=0;i < array.length;i++){
-            for(int j=1;j<array.length;j++){
+            for(int j=i+1;j<array.length;j++){
                 int sum=array[i] + array[j];
                 if(sum == target){
                     return new int[]{i ,j};
